@@ -21,29 +21,63 @@ a:active {
   color: #DF3030;
 }
 
+.main > hr{
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+.main {
+  text-align: center;
+}
+.main p {
+  text-align: left;
+}
+
+
 ul li {
   display: inline-block;
   list-style: none;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 20px;
+  width: 25%;
 }
 li:not(:first-child){
-  margin-left: 30px;
+  margin-left: 10%;
 }
+
+li:hover hr{
+  border: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  height: 40px;
+  background-image: url('../img/ornament.png');
+  background-position: center;
+  background-size: cover;
+  /* width: 100px; */
+}
+
 
 /*SIDEBAR*/
 .sidebar {
   min-width: 300px;
   width: 30vw;
   float: left;
+  position: relative;
+  padding: 25px;
 }
+
 .logo{
+  display: block;
   background-image: url('../img/logo-bg.png');
   background-repeat: no-repeat;
   background-position: top center;
   float: left;
   min-width: 280px;
   min-height: 280px;
-  margin-left: 30px;
-  margin-top: 30px;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%);
   position: relative;
 }
 
@@ -61,5 +95,20 @@ li:not(:first-child){
 }
 
 .main-nav {
-  align-item
+}
+.photo-grid{
+  text-align: left;
+}
+.caption {
+  display: inline-block;
+  margin: 1%;
+  width: 14%;
+}
+.caption img{
+  border-radius: 5px;
+  width: 100%;
+}
+
+.copy{
+  text-align: center;
 }
